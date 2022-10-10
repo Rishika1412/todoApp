@@ -31,7 +31,7 @@ class TodoItem extends StatelessWidget {
       ),
       child: ListTile(
         onTap: () {
-          onTodoChanged(todo);
+          onTodoChanged();
         },
         leading: CircleAvatar(
           backgroundColor: Colors.teal.shade300,
@@ -47,7 +47,7 @@ class TodoItem extends StatelessWidget {
             color: Colors.red,
           ),
           onPressed: () {
-            onClicked(todo);
+            onClicked();
           },
         ),
       ),
